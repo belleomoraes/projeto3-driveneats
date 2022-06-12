@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 614px;
+  font-family: "Roboto", sans-serif;
+}
+.topo {
+  background-color: #cf2b2b;
+  height: 92px;
+  width: 614px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.topo :nth-child(1) {
+  font-size: 44px;
+  font-family: "Righteous", cursive;
+}
+
+.topo :nth-child(2) {
+  font-size: 18px;
+}
+
+.container {
+  background-color: #e5e5e5;
+  width: 100%;
+  
+  margin-top: 92px;
+}
+
+.pratos,
+.bebidas,
+.sobremesas {
+  width: 614px;
+}
+
+.titulo {
+  font-size: 25px;
+  color: #333333;
+  padding: 20px 10px 10px 20px;
+  font-family: "Righteous", cursive;
+}
+
+.cardapio {
+  width: 614px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+ion-icon {
+  color: #32b72f;
+  font-size: 20px;
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+}
+
+.escolhas {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  width: 200px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.escolhas img {
+  border-radius: 5px;
+  width: 144px;
+  height: 87px;
+  margin: 10px auto;
+}
+
+.borda {
+  border: 5px solid #32b72f;
+}
+
+.descricao {
+  width: 144px;
+}
+
+.descricao div {
+  margin-bottom: 10px;
+}
+
+.descricao :nth-child(1) {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.descricao :nth-child(2) {
+  color: #a6a6a6;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.descricao :nth-child(3) {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sobremesas {
+  margin-bottom: 92px;
+}
+.fechar-pedido {
+  background-color: #ffffff;
+  width: 614px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.finalizar  {
+  background-color: #cbcbcb;
+  border-radius: 50px;
+  font-size: 23px;
+  width: 60%;
+  height: 75%;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.finalizar h1 {
+  width: 65%;
+  height: 75%;
+}
+
+.corfundo {
+  background-color: #32b72f;
+}
+
+.escondido {
+  display: none;
+}

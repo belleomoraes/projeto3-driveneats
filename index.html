@@ -1,13 +1,189 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>DrivenEats</title>
 </head>
+
 <body>
+    <div class="container">
+        <div class="topo">
+            <h1>DrivenEats<h1>
+                    <h2>Sua comida em 6 minutos</h2>
+        </div>
+
+        <div class="painel-selecao">
+            <div class="pratos">
+                <div class="titulo">Primeiro, seu prato</div>
+                <div class="cardapio">
+                    <div class="escolhas prato" onclick="selecionarPrato(this)">
+                        <div class="ion escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="imagens/hamburguer.jpg">
+                        <div class="descricao">
+                            <div>Hamburguer</div>
+                            <div> Pão australiano, cheddar e carne 180g</div>
+                            <div> R$ 25,90</div>
+                        </div>
+                    </div>
+
+                    <div class="escolhas prato" onclick="selecionarPrato(this)">
+                        <div class="ion escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="imagens/cachorro quente.jpg">
+                        <div class="descricao">
+                            <div>Cachorro-quente</div>
+                            <div>Linguiça, queijo ralado e katchup</div>
+                            <div> R$ 14,90</div>
+                        </div>
+                    </div>
+
+                    <div class="escolhas prato" onclick="selecionarPrato(this)">
+                        <div class="ion escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="imagens/risoto.jpg">
+                        <div class="descricao">
+                            <div>Risoto de camarão</div>
+                            <div> Camarão, catupiry e queijo ralado </div>
+                            <div> R$ 30,90</div>
+                        </div>
+                    </div>
+
+                    <div class="escolhas prato" onclick="selecionarPrato(this)">
+                        <div class="ion escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="imagens/pizza.jpg">
+                        <div class="descricao">
+                            <div>Pizza</div>
+                            <div> Presunto, bacon e calabresa</div>
+                            <div> R$ 22,90</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bebidas">
+                <div class="titulo">Agora, sua bebida</div>
+                <div class="cardapio">
+                    <div class="escolhas bebida" onclick="selecionarBebida(this)">
+                        <div class="ion escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="imagens/refrigerante.jpg">
+                        <div class="descricao">
+                            <div>Refrigerante</div>
+                            <div> Lata 350 ml</div>
+                            <div> R$ 8,90</div>
+                        </div>
+                    </div>
+
+                    <div class="escolhas bebida" onclick="selecionarBebida(this)">
+                        <div class="ion escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="imagens/mate.jpg">
+                        <div class="descricao">
+                            <div>Mate da casa</div>
+                            <div>Copo 500 mL</div>
+                            <div> R$ 10,00</div>
+                        </div>
+                    </div>
+
+                    <div class="escolhas bebida" onclick="selecionarBebida(this)">
+                        <div class="ion escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="imagens/suco.jpg">
+                        <div class="descricao">
+                            <div>Suco da fruta</div>
+                            <div> Garrafa 1l</div>
+                            <div> R$ 12,90</div>
+                        </div>
+                    </div>
+
+                    <div class="escolhas bebida" onclick="selecionarBebida(this)">
+                        <div class="ion escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="imagens/cerveja.jpg">
+                        <div class="descricao">
+                            <div>Cerveja</div>
+                            <div> Long neck</div>
+                            <div> R$ 15,00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sobremesas">
+                <div class="titulo">Por fim, sua sobremesa</div>
+                <div class="cardapio">
+                    <div class="escolhas sobremesa" onclick="selecionarSobremesa(this)">
+                        <div class="ion escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="imagens/bolo.jpg">
+                        <div class="descricao">
+                            <div>Bolo de pote</div>
+                            <div> Sabor: chocolate</div>
+                            <div>R$ 7,90</div>
+                        </div>
+                    </div>
+
+                    <div class="escolhas sobremesa" onclick="selecionarSobremesa(this)">
+                        <div class="ion escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="imagens/mousse.jpg">
+                        <div class="descricao">
+                            <div>Mousse</div>
+                            <div> Sabor: maracujá</div>
+                            <div> R$ 5,90</div>
+                        </div>
+                    </div>
+
+                    <div class="escolhas sobremesa" onclick="selecionarSobremesa(this)">
+                        <div class="ion escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="imagens/pudim.jpg">
+                        <div class="descricao">
+                            <div>Pudim</div>
+                            <div>Calda de laranja</div>
+                            <div> R$ 6,90</div>
+                        </div>
+                    </div>
+
+                    <div class="escolhas sobremesa" onclick="selecionarSobremesa(this)">
+                        <div class="ion escondido">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="imagens/pave.jpg">
+                        <div class="descricao">
+                            <div>Pavê</div>
+                            <div> Para duas pessoas</div>
+                            <div> R$ 11,90</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fechar-pedido">
+            <div class="finalizar" onclick="whatsapp()">
+                <h1>Selecione os 3 itens para fechar o pedido</h1>
+            </div>
+        </div>
+
+    </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
